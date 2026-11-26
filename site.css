@@ -9,6 +9,9 @@
   --accent-ink: #b84420;
   --accent-soft: #fbe3d8;
   --card: #ffffff;
+  --dark-bg: #1d1a17;
+  --dark-fg: #f1ebe3;
+  --dark-fg-2: #cfc6ba;
   --shadow: 0 1.5rem 3rem rgba(60, 40, 20, 0.16), 0 0.25rem 0.75rem rgba(60, 40, 20, 0.08);
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
   --sans: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
@@ -25,6 +28,9 @@
     --accent-ink: #f6956f;
     --accent-soft: #3a2218;
     --card: #221d18;
+    --dark-bg: #0b0907;
+    --dark-fg: #f1ebe3;
+    --dark-fg-2: #cfc6ba;
     --shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.5), 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
   }
 }
@@ -100,17 +106,17 @@ section + section { border-top: 1px solid var(--line); }
 .transcript .gen { margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px dashed var(--line); font-size: 0.85em; color: var(--muted); }
 
 /* Privacy */
-.privacy { background: var(--ink); color: var(--paper); }
-.privacy h2, .privacy h3 { color: var(--paper); }
+.privacy { background: var(--dark-bg); color: var(--dark-fg); }
+.privacy h2, .privacy h3 { color: var(--dark-fg); }
 .privacy .kicker { color: var(--accent); }
-.privacy p { color: #cfc6ba; }
-.privacy a { color: var(--paper); }
+.privacy p { color: var(--dark-fg-2); }
+.privacy a { color: var(--dark-fg); }
 .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 1.5rem; margin-top: 2.5rem; }
 .card { background: rgba(255, 255, 255, 0.06); border: 1px solid rgba(255, 255, 255, 0.12); border-radius: 1.25rem; padding: 1.75rem; }
 .card h3 { font-size: 1.25em; }
 .card p { font-size: 0.95em; }
 .honest { margin-top: 2.5rem; padding: 1.5rem 1.75rem; border-left: 0.3rem solid var(--accent); background: rgba(255, 255, 255, 0.04); border-radius: 0 1rem 1rem 0; }
-.honest p { color: #e8e0d5; }
+.honest p { color: var(--dark-fg); }
 
 /* Yours */
 .yours .cards { margin-top: 2rem; }
@@ -124,7 +130,7 @@ code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-si
 .plan { background: var(--card); border: 1px solid var(--line); border-radius: 1.5rem; padding: 2rem; }
 .plan.featured { border-color: var(--accent); box-shadow: 0 0 0 0.25rem var(--accent-soft); }
 .plan .price { font-family: var(--serif); font-size: 2.2em; font-weight: 700; margin: 0.2em 0 0.5em; }
-.plan .price small { font-family: var(--sans); font-size: 0.45em; font-weight: 600; color: var(--muted); margin-left: 0.4em; }
+.plan .price small { display: block; font-family: var(--sans); font-size: 0.45em; font-weight: 600; color: var(--muted); margin-top: 0.2em; }
 .plan ul { list-style: none; margin-top: 1.25rem; }
 .plan li { padding: 0.45em 0 0.45em 1.8em; position: relative; color: var(--ink-2); }
 .plan li::before { content: "✓"; position: absolute; left: 0; top: 0.45em; color: var(--accent); font-weight: 800; }
